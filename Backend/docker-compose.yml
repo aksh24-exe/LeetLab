@@ -10,9 +10,4 @@ services:
       POSTGRES_PASSWORD: postgres123
     ports:
       - "5435:5432"
-    volumes:
-      - pgdata:/var/lib/postgresql/data
     restart: unless-stopped
-
-volumes:
-  pgdata:
